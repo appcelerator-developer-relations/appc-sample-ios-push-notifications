@@ -4,12 +4,12 @@
 
 Using the iOS Notifications API (local, remote, silent & rich) in Titanium, including Swift-based notification extensions!
 
-## Roadmap
+## Features
 
 - [x] Local Notifications
 - [x] Remote Push Notifications
-- [ ] Silent Push Notifications (March 2018)
-- [ ] Rich Notifications (iOS 10+, April 2018)
+- [x] Silent Push Notifications
+- [x] Rich Notifications (iOS 10+)
 
 ## Notes
 
