@@ -1,0 +1,14 @@
+'#payloadText': {
+  width: Ti.UI.FILL,
+  height: Ti.UI.FILL,
+  color: 'black',
+  top: 10,
+  left: 10,
+  bottom: 10,
+  editable: false,
+  right: 10,
+  font: {
+    fontFamily: 'monospace',
+    fontSize: 13
+  }
+}

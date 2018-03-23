@@ -1,0 +1,9 @@
+<Alloy>
+	<NavigationWindow>
+		<Window title="Payload Example">
+      <LeftNavButton title="Close" onClick="close" />
+      <RightNavButton title="Copy" id="copyButton" onClick="copyPayload" />
+			<TextArea id="payloadText" />
+		</Window>
+	</NavigationWindow>
+</Alloy>

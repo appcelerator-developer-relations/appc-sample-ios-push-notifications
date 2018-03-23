@@ -5,3 +5,8 @@
 '.pickerItem': {
   selectionStyle: Titanium.UI.iOS.ListViewCellSelectionStyle.SINGLE
 }
+
+'.noSelection': {
+	selectionStyle: Titanium.UI.iOS.ListViewCellSelectionStyle.NONE,
+	accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_NONE,
+}

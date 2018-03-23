@@ -18,7 +18,7 @@
   <property name="ti.ui.defaultunit" type="string">dp</property>
   <property name="run-on-main-thread" type="bool">true</property>
   <ios>
-    <log-server-port>1338</log-server-port>
+    <log-server-port>1339</log-server-port>
     <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
     <default-background-color>#c7182c</default-background-color>
     <plist>

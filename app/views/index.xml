@@ -2,11 +2,20 @@
 	<NavigationWindow>
 		<Window title="Push Notifications">
 			<ListView onItemclick="handleAction">
+				<Templates>
+					<ItemTemplate name="RemoteNotificationTemplate">
+						<Label text="Remote Notifications" left="20" />
+						<TabbedBar index="0" right="20" onClick="changeNotificationSettings">
+							<Labels>
+								<Label>Push</Label>
+								<Label>Silent</Label>
+							</Labels>
+						</TabbedBar>
+					</ItemTemplate>
+				</Templates>
 				<ListSection>
-					<ListItem itemId="local" title="Local Notifications" />
-					<ListItem itemId="remote" title="Remote Notifications" />
-					<ListItem itemId="silent" title="Silent Notifications" />
-					<ListItem itemId="rich" title="Rich Notifications" />
+					<ListItem itemId="richNotifications" title="Rich Notifications" />
+					<ListItem class="noSelection" template="RemoteNotificationTemplate" />
 				</ListSection>
 			</ListView>
 		</Window>

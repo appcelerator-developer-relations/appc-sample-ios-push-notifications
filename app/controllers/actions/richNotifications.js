@@ -53,7 +53,12 @@ function selectDate(event) {
 function selectFieldValue(event) {
   const identifier = event.itemId.split('config_')[1]; // e.g. "config_actionTitle" becomes "actionTitle". A bit too generic, but ok for now
 
-  notificationParams[identifier] = event.value || null;;
+  if (event.value && event.value.length > 0) {
+    notificationParams[identifier] = event.value
+  } else {
+    delete notificationParams[identifier];
+  }
+
   validateNotification();
 }
 
@@ -109,6 +114,28 @@ function selectStepperValue(event) {
   validateNotification();
 }
 
+function selectTabbedValue(event) {
+  const item = event.section.getItemAt(event.itemIndex);
+
+  const attachments = [{
+    identifier: 'imageAttachment',
+    url: 'titanium_logo.png'
+  }, {
+    identifier: 'videoAttachment',
+    url: 'sample_video.mp4'
+  }, {
+    identifier: 'audioAttachment',
+    url: 'sample_audio.mp3'
+  }];
+
+  item.selectedValue.index = event.index;
+  event.section.updateItemAt(event.itemIndex, item);
+
+  notificationParams['attachments'] = [attachments[event.index]]; // Only use one attachment for now
+  validateNotification();
+}
+
+// TODO: Move to index.js to work even if app closed
 function updateNotificationSettings() {
   var category = Ti.App.iOS.createUserNotificationCategory({
     identifier: 'EXAMPLE_CATEGORY',

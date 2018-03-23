@@ -1,5 +1,5 @@
 <Alloy>
-	<Window title="Local Notifications" id="window">
+	<Window title="Rich Notifications" id="window">
     <RightNavButton id="scheduleButton" enabled="false" onClick="schedule" title="Schedule" />
 		<ListView id="listView">
 			<Templates>
@@ -20,6 +20,16 @@
 					<Label class="titleLabel" bindId="title" />
 					<Switch class="rightAligned switchControl" bindId="selectedValue" onChange="selectSwitchValue" />
 				</ItemTemplate>
+				<ItemTemplate name="TabbedItem">
+					<Label class="titleLabel" bindId="title" />
+					<TabbedBar class="rightAligned tabbedControl" bindId="selectedValue" onClick="selectTabbedValue">
+						<Labels>
+							<Label>Image</Label>
+							<Label>Video</Label>
+							<Label>Audio</Label>
+						</Labels>
+					</TabbedBar>
+				</ItemTemplate>
 			</Templates>
 			<ListSection>
         <ListItem itemId="config_date" class="pickerItem" template="DateItem" title:text="Date" selectedValue:text="Select" accessoryType="Ti.UI.LIST_ACCESSORY_TYPE_DISCLOSURE" />
@@ -30,6 +40,7 @@
         <ListItem itemId="config_foreground_action" template="SwitchItem" selectedValue:value="false" title:text="Foreground Action" />
         <ListItem itemId="config_background_action" template="SwitchItem" selectedValue:value="false" title:text="Background Action" />
         <ListItem itemId="config_respond_action" template="SwitchItem" selectedValue:value="false"  title:text="Respond Action" />
+				<ListItem itemId="config_attachments" template="TabbedItem" selectedValue:value="false" title:text="Attachment " />
 			</ListSection>
 		</ListView>
 	</Window>
