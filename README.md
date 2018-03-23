@@ -1,6 +1,6 @@
 # Titanium iOS Notifications
 
-<img src="./screenshot.png" alt="Titanium iOS Notifications" width="800" />
+<img src="./screenshot.png" alt="Titanium iOS Notifications" width="900" />
 
 Using the iOS Notifications API (local, remote, silent & rich) in Titanium, including Swift-based notification extensions!
 
