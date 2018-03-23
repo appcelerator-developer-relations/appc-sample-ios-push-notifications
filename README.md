@@ -1,3 +1,25 @@
-## Titanium iOS Notifications
+# Titanium iOS Notifications
 
 (Work in progress)
+
+Using the iOS Notifications API (local, remote, silent & rich) in Titanium, including Swift-based notification extensions!
+
+## Roadmap
+
+- [x] Local Notifications
+- [x] Remote Push Notifications
+- [ ] Silent Push Notifications (March 2018)
+- [ ] Rich Notifications (iOS 10+, April 2018)
+
+## Notes
+
+Rich Notifications are part of the Titanium SDK 7.2.0 release and includes features like attachments, more configuration
+and detailled control over pending notifications. Read more in our updated [Push Notifications Guide](https://wiki.appcelerator.org/display/guides2/Sending+and+Scheduling+Push+Notifications#SendingandSchedulingPushNotifications-RichNotifications(iOS10andlater)).
+
+## License
+
+Apache 2
+
+## Author
+
+[Hans Knöchel](https://github.com/hansemannn) (Axway Appcelerator)
