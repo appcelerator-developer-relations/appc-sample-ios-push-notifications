@@ -1,0 +1,6 @@
+<Alloy>
+	<Window title="Remote Notifications" id="window">
+    <Label id="stateLabel" textAlign="center" top="100" />
+    <Button top="200" onClick="registerUserNotificationSettings">Register Push-Notification-Settings</Button>
+	</Window>
+</Alloy>

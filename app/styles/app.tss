@@ -1,6 +1,7 @@
 'Window': {
   backButtonTitle: '',
-  translucent: false
+  translucent: false,
+  backgroundColor: 'white'
 }
 
 'ListItem': {
