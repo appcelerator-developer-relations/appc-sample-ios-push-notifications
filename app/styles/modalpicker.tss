@@ -1,0 +1,23 @@
+'#container': {
+  opacity: 0.0,
+  width: 300,
+  height: Ti.UI.SIZE,
+  backgroundColor: 'white',
+  layout: 'vertical'
+}
+
+'#picker': {
+  height: Ti.UI.SIZE,
+  width: Ti.UI.FILL,
+  type: Ti.UI.PICKER_TYPE_DATE_AND_TIME
+}
+
+'.button': {
+  height: 40,
+  backgroundColor: '#f0f0f0',
+  color: 'black'
+}
+
+'.buttonSelect': {
+  color: Alloy.CFG.colors.main
+}

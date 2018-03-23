@@ -1,0 +1,11 @@
+<Alloy>
+	<Window backgroundColor="transparent" onOpen="_showPickerView" onClick="hide">
+		<View id="container">
+	    <Picker id="picker" />
+			<View height="40">
+				<Button class="button buttonCancel" bubbleParent="false" width="50%" left="0" onClick="hide" title="Cancel" />
+				<Button class="button buttonSelect" width="50%" right="0" onClick="select" title="Select" />
+			</View>
+		</View>
+  </Window>
+</Alloy>

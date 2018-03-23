@@ -1,0 +1,7 @@
+'ListView': {
+	style: Ti.UI.iOS.ListViewStyle.GROUPED
+}
+
+'ListItem': {
+	selectionStyle: Titanium.UI.iOS.ListViewCellSelectionStyle.NONE
+}

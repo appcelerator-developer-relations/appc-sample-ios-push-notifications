@@ -1,0 +1,7 @@
+'ListItem': {
+	accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DISCLOSURE,
+}
+
+'.pickerItem': {
+  selectionStyle: Titanium.UI.iOS.ListViewCellSelectionStyle.SINGLE
+}

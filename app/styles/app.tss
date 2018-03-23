@@ -1,0 +1,46 @@
+'Window': {
+  backButtonTitle: '',
+  translucent: false
+}
+
+'ListItem': {
+  height: 43
+}
+
+'.titleLabel': {
+  left: 20
+}
+
+'.rightAligned': {
+  right: 20,
+}
+
+'.valueLabel': {
+  color: Alloy.CFG.colors.main,
+  textAlign: 'right'
+}
+
+'.inputField': {
+  width: 200,
+  height: 35,
+  textAlign: 'right',
+  hintText: 'Enter Value'
+}
+
+'.stepperLabel': {
+  right: 130,
+}
+
+'.stepperControl': {
+  minimum: 0,
+  maximum: 99,
+  steps: 1
+}
+
+'.switchControl': {
+  value: false
+}
+
+'.modalPicker': {
+
+}

@@ -1,0 +1,14 @@
+<Alloy>
+	<NavigationWindow>
+		<Window title="Push Notifications">
+			<ListView onItemclick="handleAction">
+				<ListSection>
+					<ListItem itemId="local" title="Local Notifications" />
+					<ListItem itemId="remote" title="Remote Notifications" />
+					<ListItem itemId="silent" title="Silent Notifications" />
+					<ListItem itemId="rich" title="Rich Notifications" />
+				</ListSection>
+			</ListView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

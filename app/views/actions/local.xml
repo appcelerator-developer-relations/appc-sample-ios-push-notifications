@@ -1,0 +1,36 @@
+<Alloy>
+	<Window title="Local Notifications" id="window">
+    <RightNavButton id="scheduleButton" enabled="false" onClick="schedule" title="Schedule" />
+		<ListView id="listView">
+			<Templates>
+				<ItemTemplate name="DateItem">
+					<Label class="titleLabel" bindId="title" />
+					<Label class="rightAligned valueLabel" bindId="selectedValue" onClick="selectDate" />
+				</ItemTemplate>
+				<ItemTemplate name="TextFieldItem">
+					<Label class="titleLabel" bindId="title" />
+					<TextField class="rightAligned inputField" bindId="selectedValue" onChange="selectFieldValue" onReturn="persistFieldValue" />
+				</ItemTemplate>
+				<ItemTemplate name="StepperItem">
+					<Label class="titleLabel" bindId="title" />
+					<Label class="stepperLabel" bindId="stepperLabel" />
+					<Stepper class="rightAligned stepperControl" bindId="selectedValue" onChange="selectStepperValue" />
+				</ItemTemplate>
+				<ItemTemplate name="SwitchItem">
+					<Label class="titleLabel" bindId="title" />
+					<Switch class="rightAligned switchControl" bindId="selectedValue" onChange="selectSwitchValue" />
+				</ItemTemplate>
+			</Templates>
+			<ListSection>
+        <ListItem itemId="config_date" class="pickerItem" template="DateItem" title:text="Date" selectedValue:text="Select" accessoryType="Ti.UI.LIST_ACCESSORY_TYPE_DISCLOSURE" />
+        <ListItem itemId="config_alertTitle" template="TextFieldItem" title:text="Title" selectedValue:text="" />
+        <ListItem itemId="config_alertSubtitle" template="TextFieldItem" title:text="Subtitle" selectedValue:text="" />
+        <ListItem itemId="config_alertBody" template="TextFieldItem" title:text="Body" selectedValue:text="" />
+        <ListItem itemId="config_badge" template="StepperItem" selectedValue:value="0" stepperLabel:text="0" title:text="Badge" />
+        <ListItem itemId="config_foreground_action" template="SwitchItem" selectedValue:value="false" title:text="Foreground Action" />
+        <ListItem itemId="config_background_action" template="SwitchItem" selectedValue:value="false" title:text="Background Action" />
+        <ListItem itemId="config_respond_action" template="SwitchItem" selectedValue:value="false"  title:text="Respond Action" />
+			</ListSection>
+		</ListView>
+	</Window>
+</Alloy>

@@ -1,0 +1,14 @@
+{
+	"global": {
+		"colors": {
+			"main": "#c7182c"
+		}
+	},
+	"env:development": {},
+	"env:test": {},
+	"env:production": {},
+	"os:android": {},
+	"os:ios": {},
+	"os:windows": {},
+	"dependencies": {}
+}
