@@ -1,10 +1,10 @@
 # Titanium iOS Notifications
 
-(Work in progress)
+> ⚠️The **Attachments API's** and **Notification Service Extension** only work with Titanium 7.2.0 and later. Make sure to follow [TIMOB-23527](https://jira.appcelerator.org/browse/TIMOB-23527) for details.
 
 Using the iOS Notifications API (local, remote, silent & rich) in Titanium, including Swift-based notification extensions!
 
-## Roadmap
+## Features
 
 - [x] Local Notifications
 - [x] Remote Push Notifications
