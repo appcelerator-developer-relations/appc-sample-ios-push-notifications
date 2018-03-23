@@ -34,6 +34,17 @@
         </array>
       </dict>
     </plist>
+    <extensions>
+      <extension projectPath="extensions/NotificationServiceExtension/com.appcelerator.sample.richpush.xcodeproj">
+          <target name="notificationservice">
+              <provisioning-profiles>
+                  <device>INSERT_YOUR_DEV_EXTENSION_PROVISIONING_PROFILE_ID_HERE</device>
+                  <dist-appstore>INSERT_YOUR_APP_STORE_EXTENSION_PROVISIONING_PROFILE_ID_HERE</dist-appstore>
+                  <dist-adhoc>INSERT_YOUR_ADHOC_EXTENSION_PROVISIONING_PROFILE_ID_HERE</dist-adhoc>
+              </provisioning-profiles>
+          </target>
+      </extension>
+  </extensions>
   </ios>
   <android
     xmlns:android="http://schemas.android.com/apk/res/android">
