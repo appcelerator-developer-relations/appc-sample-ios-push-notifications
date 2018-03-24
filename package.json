@@ -1,0 +1,32 @@
+{
+  "name": "appc-sample-ios-rich-notifications",
+  "version": "1.0.0",
+  "description": "<img src=\"./screenshot.png\" alt=\"Titanium iOS Notifications\" width=\"900\" />",
+  "main": "app/index.js",
+  "scripts": {
+    "lint": "eslint --config axway/env-titanium app --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appcelerator-developer-relations/appc-sample-ios-rich-notifications.git"
+  },
+  "keywords": [
+    "titanium",
+    "ios",
+    "notifications",
+    "sample",
+    "axway",
+    "appcelerator",
+    "javascript"
+  ],
+  "author": "Hans Knoechel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appcelerator-developer-relations/appc-sample-ios-rich-notifications/issues"
+  },
+  "homepage": "https://github.com/appcelerator-developer-relations/appc-sample-ios-rich-notifications#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-axway": "^2.0.12"
+  }
+}

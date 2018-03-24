@@ -1,7 +1,7 @@
 const apnsSilent = {
-    "aps": {
-        "content-available": 1
-    }
-}
+	aps: {
+		'content-available': 1
+	}
+};
 
-export { apnsSilent }
+export { apnsSilent };

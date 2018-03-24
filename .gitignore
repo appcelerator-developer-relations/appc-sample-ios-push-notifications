@@ -18,3 +18,5 @@ Pods
 /plugins/hyperloop
 /Podfile.lock
 extensions/NotificationServiceExtension/com.appcelerator.sample.richpush.xcodeproj/project.xcworkspace/xcuserdata/
+/node_modules
+/package-lock.json
