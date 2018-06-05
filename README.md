@@ -4,6 +4,10 @@
 
 Using the iOS Notifications API (local, remote, silent & rich) in Titanium, including Swift-based notification extensions!
 
+## Requirements
+
+- 7.3.0 or later (install before GA using `appc ti sdk install -b 7_3_X`
+
 ## Features
 
 - [x] Local Notifications
@@ -13,7 +17,7 @@ Using the iOS Notifications API (local, remote, silent & rich) in Titanium, incl
 
 ## Notes
 
-Rich Notifications are part of the Titanium SDK 7.2.0 release and includes features like attachments, more configuration
+Rich Notifications are part of the Titanium SDK 7.3.0 release and includes features like attachments, more configuration
 and detailled control over pending notifications. Read more in our updated [Push Notifications Guide](https://wiki.appcelerator.org/display/guides2/Sending+and+Scheduling+Push+Notifications#SendingandSchedulingPushNotifications-RichNotifications(iOS10andlater)).
 
 ## License
