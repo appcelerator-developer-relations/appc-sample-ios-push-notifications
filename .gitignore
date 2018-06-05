@@ -20,3 +20,5 @@ Pods
 extensions/NotificationServiceExtension/com.appcelerator.sample.richpush.xcodeproj/project.xcworkspace/xcuserdata/
 /node_modules
 /package-lock.json
+extensions/NotificationServiceExtension/com.appcelerator.sample.richpush.xcodeproj/xcuserdata
+extensions/NotificationServiceExtension/com.appcelerator.sample.richpush.xcodeproj/project.xcworkspace/xcshareddata

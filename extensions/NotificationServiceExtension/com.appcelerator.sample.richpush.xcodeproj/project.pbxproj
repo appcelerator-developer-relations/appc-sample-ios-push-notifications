@@ -65,6 +65,7 @@
 				54450C3D20653E9D00F78CF6 /* Sources */,
 				54450C3E20653E9D00F78CF6 /* Frameworks */,
 				54450C3F20653E9D00F78CF6 /* Resources */,
+				DBC7654520C6D76E00D66822 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -116,6 +117,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DBC7654520C6D76E00D66822 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Remove the Frameworks/ directory from the bundle.\n# More: https://github.com/appcelerator-developer-relations/appc-sample-ios-push-notifications/issues/1\n\ncd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then \n    rm -fr Frameworks\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54450C3D20653E9D00F78CF6 /* Sources */ = {
